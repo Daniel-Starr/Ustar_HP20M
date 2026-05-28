@@ -1,0 +1,28 @@
+--cpu=Cortex-M33
+"ustar_hp20m\startup_stm32u575xx.o"
+"ustar_hp20m\main.o"
+"ustar_hp20m\stm32u5xx_it.o"
+"ustar_hp20m\stm32u5xx_hal_msp.o"
+"ustar_hp20m\stm32u5xx_hal_cortex.o"
+"ustar_hp20m\stm32u5xx_hal.o"
+"ustar_hp20m\stm32u5xx_hal_i2c.o"
+"ustar_hp20m\stm32u5xx_hal_i2c_ex.o"
+"ustar_hp20m\stm32u5xx_hal_rcc.o"
+"ustar_hp20m\stm32u5xx_hal_rcc_ex.o"
+"ustar_hp20m\stm32u5xx_hal_flash.o"
+"ustar_hp20m\stm32u5xx_hal_flash_ex.o"
+"ustar_hp20m\stm32u5xx_hal_gpio.o"
+"ustar_hp20m\stm32u5xx_hal_dma.o"
+"ustar_hp20m\stm32u5xx_hal_dma_ex.o"
+"ustar_hp20m\stm32u5xx_hal_exti.o"
+"ustar_hp20m\stm32u5xx_hal_pwr.o"
+"ustar_hp20m\stm32u5xx_hal_pwr_ex.o"
+"ustar_hp20m\stm32u5xx_hal_gtzc.o"
+"ustar_hp20m\stm32u5xx_hal_icache.o"
+"ustar_hp20m\stm32u5xx_hal_uart.o"
+"ustar_hp20m\stm32u5xx_hal_uart_ex.o"
+"ustar_hp20m\system_stm32u5xx.o"
+--strict --scatter "Ustar_HP20M\Ustar_HP20M.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Ustar_HP20M.map" -o Ustar_HP20M\Ustar_HP20M.axf
